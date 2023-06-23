@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0"
+      prefWidth="1095.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.pokedex.Controller.TeamsManagementController">
+    <ImageView id="ivPokemonImage" fx:id="ivPokemonImage" fitHeight="191.0" fitWidth="217.0" layoutX="193.0"
+               layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@grey_background.png"/>
+    </ImageView>
+    <ComboBox id="comboBoxGenerations" fx:id="comboBoxGenerations" layoutX="22.0" layoutY="31.0" prefHeight="28.0"
+              prefWidth="159.0" promptText="Choose Generation"/>
+    <ListView id="listViewAllPokemon" fx:id="listViewAllPokemon" layoutX="22.0" layoutY="72.0" prefHeight="464.0"
+              prefWidth="159.0"/>
+    <Button id="btnListAll" fx:id="btnListAll" layoutX="193.0" layoutY="72.0" mnemonicParsing="false" prefHeight="28.0"
+            prefWidth="217.0" text="Load All"/>
+    <ListView id="listViewTeamPokemon" fx:id="listViewTeamPokemon" layoutX="496.0" layoutY="72.0" prefHeight="148.0"
+              prefWidth="159.0"/>
+    <Button id="btnShowTeams" fx:id="btnShowTeams" layoutX="222.0" layoutY="508.0" mnemonicParsing="false"
+            prefHeight="28.0" prefWidth="160.0" text="Show Teams"/>
+    <Button id="btnRemoveFromTeam" fx:id="btnRemoveFromTeam" layoutX="526.0" layoutY="231.0" mnemonicParsing="false"
+            prefHeight="28.0" prefWidth="100.0" text="Delete"/>
+    <ListView id="listViewTeams" fx:id="listViewTeams" layoutX="786.0" layoutY="72.0" prefHeight="368.0"
+              prefWidth="159.0"/>
+    <TextField id="txtTeamName" fx:id="txtTeamName" layoutX="954.0" layoutY="142.0" prefHeight="22.0" prefWidth="132.0"
+               text="Type team name..."/>
+    <Button id="btnCreateTeam" fx:id="btnCreateTeam" layoutX="954.0" layoutY="181.0" mnemonicParsing="false"
+            prefHeight="28.0" prefWidth="132.0" text="Create Team"/>
+    <Button id="btnSendToDb" fx:id="btnSendToDb" layoutX="954.0" layoutY="217.0" mnemonicParsing="false"
+            prefHeight="28.0" prefWidth="133.0" text="Add to Database"/>
+    <Button id="btnAddToTeam" fx:id="btnAddToTeam" layoutX="193.0" layoutY="332.0" mnemonicParsing="false"
+            prefHeight="25.0" prefWidth="217.0" text="Add To Team"/>
+    <Button fx:id="btnGoBack" layoutX="994.0" layoutY="527.0" mnemonicParsing="false" onAction="#navigateToPokedexView"
+            prefHeight="28.0" prefWidth="87.0" text="Go Back"/>
+
+</Pane>

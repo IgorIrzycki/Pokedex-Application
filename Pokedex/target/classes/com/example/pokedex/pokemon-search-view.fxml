@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0"
+      prefWidth="1095.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.pokedex.Controller.PokemonSearchController">
+    <ImageView id="ivPokemonImage" fx:id="ivPokemonImage" fitHeight="191.0" fitWidth="217.0" layoutX="450.0"
+               layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@grey_background.png"/>
+    </ImageView>
+    <TextArea id="textAreaStats" fx:id="textAreaStats" layoutX="349.0" layoutY="303.0" prefHeight="235.0"
+              prefWidth="132.0"/>
+    <TextArea id="textAreaPokemonInfo" fx:id="textAreaPokemonInfo" layoutX="492.0" layoutY="304.0" prefHeight="235.0"
+              prefWidth="132.0"/>
+    <TextArea id="textAreaAdditionalInfo" fx:id="textAreaAdditionalInfo" layoutX="635.0" layoutY="304.0"
+              prefHeight="235.0" prefWidth="132.0"/>
+    <Label fx:id="lblPokemonWebsiteResult" layoutX="488.0" layoutY="30.0">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Label>
+    <Label layoutX="392.0" layoutY="276.0" text="Stats">
+        <font>
+            <Font name="Roboto Light" size="20.0"/>
+        </font>
+    </Label>
+    <Label layoutX="541.0" layoutY="276.0" text="Info">
+        <font>
+            <Font name="Roboto Light" size="20.0"/>
+        </font>
+    </Label>
+    <Label layoutX="667.0" layoutY="276.0" text="Abilities">
+        <font>
+            <Font name="Roboto Light" size="20.0"/>
+        </font>
+    </Label>
+    <ComboBox id="comboBoxGenerations" fx:id="comboBoxGenerations" layoutX="22.0" layoutY="31.0" prefHeight="28.0"
+              prefWidth="159.0" promptText="Choose Generation"/>
+    <ListView id="listViewAllPokemon" fx:id="listViewAllPokemon" layoutX="22.0" layoutY="72.0" prefHeight="464.0"
+              prefWidth="159.0"/>
+    <Button id="btnListAll" fx:id="btnListAll" layoutX="201.0" layoutY="72.0" mnemonicParsing="false" prefHeight="28.0"
+            prefWidth="100.0" text="Load All"/>
+    <Button id="btnSearch" fx:id="btnSearch" layoutX="201.0" layoutY="110.0" mnemonicParsing="false" prefHeight="28.0"
+            prefWidth="133.0" text="Search By Name"/>
+    <Button id="btnSearchByNumber" fx:id="btnSearchByNumber" layoutX="201.0" layoutY="151.0" mnemonicParsing="false"
+            prefHeight="28.0" prefWidth="133.0" text="Search By Number"/>
+    <Label id="labelEvolutions" alignment="CENTER" layoutX="835.0" layoutY="61.0" prefHeight="41.0" prefWidth="196.0"
+           text="Evolution Line">
+        <font>
+            <Font name="Roboto Light" size="28.0"/>
+        </font>
+    </Label>
+    <VBox id="vboxEvolutions" fx:id="vboxEvolutions" layoutX="799.0" layoutY="100.0" prefHeight="370.0"
+          prefWidth="267.0"/>
+
+    <Button fx:id="btnGoBack" layoutX="994.0" layoutY="527.0" mnemonicParsing="false" onAction="#navigateToPokedexView"
+            prefHeight="28.0" prefWidth="87.0" text="Go Back"/>
+
+</Pane>

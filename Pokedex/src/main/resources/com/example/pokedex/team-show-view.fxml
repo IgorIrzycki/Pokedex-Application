@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="291.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pokedex.Controller.TeamShowController">
+    <ComboBox id="comboBoxTeams" fx:id="comboBoxTeams" layoutX="16.0" layoutY="50.0" prefHeight="24.0" prefWidth="160.0"
+              promptText="Choose team"/>
+    <ListView id="listViewTeamPokemon2" fx:id="listViewTeamPokemon2" layoutX="16.0" layoutY="90.0" prefHeight="126.0"
+              prefWidth="159.0"/>
+    <BarChart id="chartStats" fx:id="chartStats" layoutX="368.0" layoutY="15.0" prefHeight="222.0" prefWidth="469.0">
+        <xAxis>
+            <CategoryAxis side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </BarChart>
+    <ImageView fx:id="ivPokemonImage" fitHeight="126.0" fitWidth="172.0" layoutX="199.0" layoutY="90.0"
+               pickOnBounds="true" preserveRatio="true">
+        <Image url="@grey_background.png"/>
+    </ImageView>
+    <Button fx:id="btnDeletePokemon" layoutX="44.0" layoutY="225.0" mnemonicParsing="false" text="Delete Pokemon"/>
+    <Button fx:id="btnDeleteTeam" layoutX="55.0" layoutY="258.0" mnemonicParsing="false" text="Delete Team"/>
+</Pane>
